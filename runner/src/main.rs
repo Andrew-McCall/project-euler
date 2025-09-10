@@ -27,6 +27,12 @@ fn main() {
         benchmark(|| p2::solution(4000000));
     }
 
+    #[cfg(feature = "s3")]
+    {
+        println!("Running p3");
+        benchmark(|| p3::solution(600851475143));
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected");
     }

@@ -6,8 +6,10 @@ edition = "2024"
 [dependencies]
 p1 = { path = "../p1", optional = true }
 p2 = { path = "../p2", optional = true }
+p3 = { path = "../p3", optional = true }
 
 [features]
 s1 = ["dep:p1"]
 s2 = ["dep:p2"]
-default = ["s1", "s2"]
+s3 = ["dep:p3"]
+default = ["s1", "s2", "s3"]
