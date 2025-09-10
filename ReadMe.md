@@ -57,4 +57,8 @@ Time elapsed: 0.06997496 seconds
 Solving Problem 13:
 5537376230
 Time elapsed: 0.00000818 seconds
+
+Solving Problem 14:
+837799 (524)
+Time elapsed: 0.09640661 seconds
 ```

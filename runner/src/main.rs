@@ -102,6 +102,12 @@ fn main() {
       benchmark(|| p13::solution(p13::INPUT.split_whitespace().collect::<Vec<_>>(), 10));
     }
 
+    #[cfg(feature = "s14")]
+    {
+      println!("Solving Problem 14:");
+      benchmark(|| p14::solution(1_000_000) );
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected:");
     }
