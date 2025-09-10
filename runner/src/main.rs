@@ -24,7 +24,7 @@ fn main() {
     #[cfg(feature = "s2")]
     {
         println!("Running p2");
-        benchmark(p2::solution);
+        benchmark(|| p2::solution(4000000));
     }
 
     if !unsafe { RAN } {
