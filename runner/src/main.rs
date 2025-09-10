@@ -53,6 +53,12 @@ fn main() {
         benchmark(|| p6::alt_solution(100));
     }
 
+    #[cfg(feature = "s7")]
+    {
+        println!("Running p7");
+        benchmark(|| p7::solution(10001));
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected");
     }
