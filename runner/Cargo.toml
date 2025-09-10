@@ -7,9 +7,13 @@ edition = "2024"
 p1 = { path = "../p1", optional = true }
 p2 = { path = "../p2", optional = true }
 p3 = { path = "../p3", optional = true }
+p4 = { path = "../p4", optional = true }
+p5 = { path = "../p5", optional = true }
 
 [features]
-s1 = ["dep:p1"]
-s2 = ["dep:p2"]
-s3 = ["dep:p3"]
-default = ["s1", "s2", "s3"]
+s1 = ["p1"]
+s2 = ["p2"]
+s3 = ["p3"]
+s4 = ["p4"]
+s5 = ["p5"]
+default = ["s1", "s2", "s3", "s4", "s5"]

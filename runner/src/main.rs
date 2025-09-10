@@ -33,6 +33,18 @@ fn main() {
         benchmark(|| p3::solution(600851475143));
     }
 
+    #[cfg(feature = "s4")]
+    {
+        println!("Running p4");
+        benchmark(|| p4::solution(999));
+    }
+
+    #[cfg(feature = "s5")]
+    {
+        println!("Running p5");
+        benchmark(|| p5::solution(20));
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected");
     }

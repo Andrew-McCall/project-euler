@@ -19,10 +19,20 @@ name = "p3"
 version = "0.1.0"
 
 [[package]]
+name = "p4"
+version = "0.1.0"
+
+[[package]]
+name = "p5"
+version = "0.1.0"
+
+[[package]]
 name = "runner"
 version = "0.1.0"
 dependencies = [
  "p1",
  "p2",
  "p3",
+ "p4",
+ "p5",
 ]
