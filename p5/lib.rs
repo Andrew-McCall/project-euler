@@ -1,10 +1,10 @@
-/* p0: Example */
+/* p5: Smallest Multiple */
 pub fn solution(bound: u64) -> u64 {
     (1..=bound).reduce(least_common_multiple).unwrap()
 }
 
 #[test]
-fn test() {
+pub fn test() {
     assert_eq!(solution(10), 2520);
     assert_eq!(solution(20), 232792560);
 }
