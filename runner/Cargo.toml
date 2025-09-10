@@ -15,6 +15,7 @@ p8 = { path = "../p8", optional = true }
 p9 = { path = "../p9", optional = true }
 p10 = { path = "../p10", optional = true }
 p11 = { path = "../p11", optional = true }
+p12 = { path = "../p12", optional = true }
 
 [features]
 s1 = ["p1"]
@@ -28,4 +29,5 @@ s8 = ["p8"]
 s9 = ["p9"]
 s10 = ["p10"]
 s11 = ["p11"]
-default = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11"]
+s12 = ["p12"]
+default = ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8", "s9", "s10", "s11", "s12"]

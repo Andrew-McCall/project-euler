@@ -49,4 +49,8 @@ Time elapsed: 0.11277517 seconds
 Solving Problem 11:
 70600674 = [87 @ (3, 15), 97 @ (4, 14), 94 @ (5, 13), 89 @ (6, 12)]
 Time elapsed: 0.00002829 seconds
+
+Solving Problem 12:
+76576500
+Time elapsed: 0.06997496 seconds
 ```
