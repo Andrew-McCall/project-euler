@@ -72,6 +72,12 @@ fn main() {
         });
     }
 
+    #[cfg(feature = "s9")]
+    {
+        println!("Running p9");
+        benchmark(p9::solution)
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected");
     }

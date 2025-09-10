@@ -39,6 +39,10 @@ name = "p8"
 version = "0.1.0"
 
 [[package]]
+name = "p9"
+version = "0.1.0"
+
+[[package]]
 name = "runner"
 version = "0.1.0"
 dependencies = [
@@ -50,4 +54,5 @@ dependencies = [
  "p6",
  "p7",
  "p8",
+ "p9",
 ]
