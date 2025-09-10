@@ -1,0 +1,11 @@
+[package]
+name = "runner"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+p1 = { path = "../p1", optional = true }
+
+[features]
+default = []
+p1 = ["dep:p1"]
