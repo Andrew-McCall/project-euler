@@ -62,14 +62,7 @@ fn main() {
     #[cfg(feature = "s8")]
     {
         println!("Solving Problem 8:");
-        benchmark(|| {
-            p8::solution(
-                p8::string_to_array(
-                    p8::INPUT,
-                ),
-                13,
-            )
-        });
+        benchmark(|| p8::solution(p8::string_to_array(p8::INPUT), 13));
     }
 
     #[cfg(feature = "s9")]
@@ -87,31 +80,43 @@ fn main() {
     #[cfg(feature = "s11")]
     {
         println!("Solving Problem 11:");
-        benchmark(|| p11::solution(p11::spaced_string_to_array(p11::INPUT),20,20, 4));
+        benchmark(|| p11::solution(p11::spaced_string_to_array(p11::INPUT), 20, 20, 4));
     }
 
     #[cfg(feature = "s12")]
     {
-      println!("Solving Problem 12:");
-      benchmark(|| p12::solution(500));
+        println!("Solving Problem 12:");
+        benchmark(|| p12::solution(500));
     }
 
     #[cfg(feature = "s13")]
     {
-      println!("Solving Problem 13:");
-      benchmark(|| p13::solution(p13::INPUT.split_whitespace().collect::<Vec<_>>(), 10));
+        println!("Solving Problem 13:");
+        benchmark(|| p13::solution(p13::INPUT.split_whitespace().collect::<Vec<_>>(), 10));
     }
 
     #[cfg(feature = "s14")]
     {
-      println!("Solving Problem 14:");
-      benchmark(|| p14::solution(1_000_000) );
+        println!("Solving Problem 14:");
+        benchmark(|| p14::solution(1_000_000));
     }
 
     #[cfg(feature = "s15")]
     {
-      println!("Solving Problem 15:");
-      benchmark(|| p15::solution(20) );
+        println!("Solving Problem 15:");
+        benchmark(|| p15::solution(20));
+    }
+
+    #[cfg(feature = "s15")]
+    {
+        println!("Solving Problem 15:");
+        benchmark(|| p15::solution(20));
+    }
+
+    #[cfg(feature = "s16")]
+    {
+        println!("Solving Problem 16:");
+        benchmark(|| p16::solution(2, 1000));
     }
 
     if !unsafe { RAN } {

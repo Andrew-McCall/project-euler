@@ -65,4 +65,8 @@ Time elapsed: 0.09640661 seconds
 Solving Problem 15:
 137846528820
 Time elapsed: 0.00000011 seconds
+
+Solving Problem 16:
+1366
+Time elapsed: 0.00028279 seconds
 ```
