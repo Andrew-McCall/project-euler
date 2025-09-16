@@ -19,21 +19,21 @@ pub fn alt_solution(mut n: u64) -> Result {
     }
 
     let mut column = 0;
-    let mut string = String::new();
+    let mut translation = Vec::new();
 
     let teens = n % 100;
     if teens > 10 && teens < 20 {
         match teens {
-            10 => string.push_str(&NumberTranslation::Ten.to_string()),
-            11 => string.push_str(&NumberTranslation::Eleven.to_string()),
-            12 => string.push_str(&NumberTranslation::Twelve.to_string()),
-            13 => string.push_str(&NumberTranslation::Thirteen.to_string()),
-            14 => string.push_str(&NumberTranslation::Fourteen.to_string()),
-            15 => string.push_str(&NumberTranslation::Fifteen.to_string()),
-            16 => string.push_str(&NumberTranslation::Sixteen.to_string()),
-            17 => string.push_str(&NumberTranslation::Seventeen.to_string()),
-            18 => string.push_str(&NumberTranslation::Eighteen.to_string()),
-            19 => string.push_str(&NumberTranslation::Nineteen.to_string()),
+            10 => translation.push(NumberTranslation::Ten),
+            11 => translation.push(NumberTranslation::Eleven),
+            12 => translation.push(NumberTranslation::Twelve),
+            13 => translation.push(NumberTranslation::Thirteen),
+            14 => translation.push(NumberTranslation::Fourteen),
+            15 => translation.push(NumberTranslation::Fifteen),
+            16 => translation.push(NumberTranslation::Sixteen),
+            17 => translation.push(NumberTranslation::Seventeen),
+            18 => translation.push(NumberTranslation::Eighteen),
+            19 => translation.push(NumberTranslation::Nineteen),
             _ => unreachable!(),
         }
         column = 2;
@@ -50,77 +50,77 @@ pub fn alt_solution(mut n: u64) -> Result {
         }
 
         match column {
-            1 => string.push_str(&match_digit(digit)),
+            1 => (),
             2 => match digit {
-                1 => string.push_str(&NumberTranslation::Ten.to_string()),
-                2 => string.push_str(&NumberTranslation::Twenty.to_string()),
-                3 => string.push_str(&NumberTranslation::Thirty.to_string()),
-                4 => string.push_str(&NumberTranslation::Forty.to_string()),
-                5 => string.push_str(&NumberTranslation::Fifty.to_string()),
-                6 => string.push_str(&NumberTranslation::Sixty.to_string()),
-                7 => string.push_str(&NumberTranslation::Seventy.to_string()),
-                8 => string.push_str(&NumberTranslation::Eighty.to_string()),
-                9 => string.push_str(&NumberTranslation::Ninety.to_string()),
+                1 => translation.push(NumberTranslation::Ten),
+                2 => translation.push(NumberTranslation::Twenty),
+                3 => translation.push(NumberTranslation::Thirty),
+                4 => translation.push(NumberTranslation::Forty),
+                5 => translation.push(NumberTranslation::Fifty),
+                6 => translation.push(NumberTranslation::Sixty),
+                7 => translation.push(NumberTranslation::Seventy),
+                8 => translation.push(NumberTranslation::Eighty),
+                9 => translation.push(NumberTranslation::Ninety),
                 _ => unreachable!(),
             },
             3 => {
-                if !string.is_empty() {
-                    string.push_str(&NumberTranslation::And.to_string())
+                if !translation.is_empty() {
+                    translation.push(NumberTranslation::And)
                 };
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Hundred.to_string());
+                translation.push(NumberTranslation::Hundred);
             }
             4 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Thousand.to_string());
+                translation.push(NumberTranslation::Thousand);
             }
             5 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Thousand.to_string());
+                translation.push(NumberTranslation::Thousand);
             }
             6 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Million.to_string());
+                translation.push(NumberTranslation::Million);
             }
             7 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Million.to_string());
+                translation.push(NumberTranslation::Million);
             }
             8 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Billion.to_string());
+                translation.push(NumberTranslation::Billion);
             }
             9 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Billion.to_string());
+                translation.push(NumberTranslation::Billion);
             }
             10 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Trillion.to_string());
+                translation.push(NumberTranslation::Trillion);
             }
             11 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Trillion.to_string());
+                translation.push(NumberTranslation::Trillion);
             }
             12 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Quadrillion.to_string());
+                translation.push(NumberTranslation::Quadrillion);
             }
             13 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Quadrillion.to_string());
+                translation.push(NumberTranslation::Quadrillion);
             }
             14 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Quintillion.to_string());
+                translation.push(NumberTranslation::Quintillion);
             }
             15 => {
-                string.push_str(&match_digit(digit));
-                string.push_str(&NumberTranslation::Quintillion.to_string());
+                translation.push(NumberTranslation::Quintillion);
             }
             _ => panic!("Number too large"),
         }
+
+        if column != 2
+            && let Some(d) = match_digit(digit)
+        {
+            translation.push(d)
+        }
     }
+
+    let string = translation
+        .iter()
+        .rev()
+        .map(|t| t.to_string())
+        .collect::<Vec<String>>()
+        .join(" ");
 
     Result {
         characters: string.chars().filter(|c| char::is_alphabetic(*c)).count() as u64,
@@ -129,29 +129,32 @@ pub fn alt_solution(mut n: u64) -> Result {
     }
 }
 
-pub fn match_digit(digit: u64) -> String {
+pub fn match_digit(digit: u64) -> Option<NumberTranslation> {
     assert!(digit < 10);
     match digit {
-        0 => "".to_string(),
-        1 => NumberTranslation::One.to_string(),
-        2 => NumberTranslation::Two.to_string(),
-        3 => NumberTranslation::Three.to_string(),
-        4 => NumberTranslation::Four.to_string(),
-        5 => NumberTranslation::Five.to_string(),
-        6 => NumberTranslation::Six.to_string(),
-        7 => NumberTranslation::Seven.to_string(),
-        8 => NumberTranslation::Eight.to_string(),
-        9 => NumberTranslation::Nine.to_string(),
+        0 => None,
+        1 => Some(NumberTranslation::One),
+        2 => Some(NumberTranslation::Two),
+        3 => Some(NumberTranslation::Three),
+        4 => Some(NumberTranslation::Four),
+        5 => Some(NumberTranslation::Five),
+        6 => Some(NumberTranslation::Six),
+        7 => Some(NumberTranslation::Seven),
+        8 => Some(NumberTranslation::Eight),
+        9 => Some(NumberTranslation::Nine),
         _ => unreachable!(),
     }
 }
 
 #[test]
 fn test() {
-    assert_eq!(alt_solution(1000).number_string, "onethousand");
-    assert_eq!(alt_solution(999).number_string, "nineninetyandninehundred");
-    assert_eq!(alt_solution(600).number_string, "sixhundred");
-    assert_eq!(alt_solution(611).number_string, "elevenandsixhundred");
+    assert_eq!(alt_solution(1000).number_string, "one thousand");
+    assert_eq!(
+        alt_solution(999).number_string,
+        "nine hundred and ninety nine"
+    );
+    assert_eq!(alt_solution(600).number_string, "six hundred");
+    assert_eq!(alt_solution(611).number_string, "six hundred and eleven");
     assert_eq!(solution(1000), 21124);
 }
 
