@@ -72,5 +72,5 @@ Time elapsed: 0.00028279 seconds
 
 Solving Problem 17:
 21124
-Time elapsed: 0.00041838 seconds
+Time elapsed: 0.00179258 seconds
 ```
