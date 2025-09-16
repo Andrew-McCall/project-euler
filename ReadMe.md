@@ -73,4 +73,8 @@ Time elapsed: 0.00028279 seconds
 Solving Problem 17:
 21124
 Time elapsed: 0.00179258 seconds
+
+Solving Problem 18:
+929 <= 62 <- 68 <- 71 <- 70 <- 71 <- 48 <- 56 <- 65 <- 88 <- 23 <- 20 <- 35 <- 82 <- 95 <- 75
+Time elapsed: 0.00003033 seconds
 ```

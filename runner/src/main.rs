@@ -125,6 +125,12 @@ fn main() {
         benchmark(|| p17::solution(1000));
     }
 
+    #[cfg(feature = "s18")]
+    {
+        println!("Solving Problem 18:");
+        benchmark(|| p18::solution(p18::string_to_triangle(p18::INPUT)));
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected:");
     }
