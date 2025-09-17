@@ -1,5 +1,3 @@
-use std::{fs::File, io::Read};
-
 /* p67: Maximum Path Sum II */
 pub fn solution(path: &str) -> u64 {
     p18::solution(read_input_file(path))
@@ -8,14 +6,10 @@ pub fn solution(path: &str) -> u64 {
 pub const INPUT_PATH: &str = "0067_triangle.txt";
 
 pub fn read_input_file(path: &str) -> Vec<u64> {
-    let mut text_file = File::open(path).expect("Failed to open file");
-    let mut contents = String::new();
-    text_file
-        .read_to_string(&mut contents)
-        .expect("Unable to parse file");
+    let contents = std::fs::read_to_string(path).expect("Failed to read file");
     contents
         .split_whitespace()
-        .map(|n| n.parse::<u64>().unwrap())
+        .map(|n| n.parse::<u64>().expect("Failed to parse number"))
         .collect()
 }
 
