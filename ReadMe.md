@@ -106,4 +106,8 @@ Time elapsed: 0.00008992 seconds
 Solving Problem 23:
 Answer: 4179871
 Time elapsed: 0.28286417 seconds
+
+Solving Problem 24:
+Answer: 2783915460
+Time elapsed: 0.00288258 seconds
 ```
