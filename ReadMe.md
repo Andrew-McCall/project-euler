@@ -75,6 +75,21 @@ Solving Problem 17:
 Time elapsed: 0.00179258 seconds
 
 Solving Problem 18:
-929 <= 62 <- 68 <- 71 <- 70 <- 71 <- 48 <- 56 <- 65 <- 88 <- 23 <- 20 <- 35 <- 82 <- 95 <- 75
-Time elapsed: 0.00003033 seconds
+N/A
+
+Solving Problem 19:
+171
+Time elapsed: 0.00006685 seconds
+
+Solving Problem 20:
+648
+Time elapsed: 0.00001073 seconds
+
+Solving Problem 21:
+31626
+Time elapsed: 0.06461265 seconds
+
+Solving Problem 22:
+871198282
+Time elapsed: 0.00120738 seconds
 ```
