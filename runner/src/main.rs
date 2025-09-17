@@ -131,6 +131,27 @@ fn main() {
         benchmark(|| p18::solution(p18::string_to_triangle(p18::INPUT)));
     }
 
+    #[cfg(feature = "s19")]
+    {
+        println!("Solving Problem 19:");
+        benchmark(|| {
+            p19::solution(
+                Date {
+                    year: 1901,
+                    month: Month::January,
+                    day: 1,
+                    weekday: DayOfWeek::Tuesday,
+                },
+                Date {
+                    year: 2000,
+                    month: Month::December,
+                    day: 31,
+                    weekday: DayOfWeek::Sunday,
+                },
+            )
+        });
+    }
+
     #[cfg(feature = "s67")]
     {
         println!("Solving Problem 67:");
