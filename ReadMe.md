@@ -102,4 +102,8 @@ Time elapsed: 0.00143667 seconds
 Solving Problem 67:
 Answer: 7273
 Time elapsed: 0.00008992 seconds
+
+Solving Problem 23:
+Answer: 4179871
+Time elapsed: 0.28286417 seconds
 ```

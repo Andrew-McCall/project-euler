@@ -170,6 +170,12 @@ fn main() {
         benchmark(|| p22::solution(p22::file_to_names(&format!("p22/{}", p22::INPUT_PATH))));
     }
 
+    #[cfg(feature = "s23")]
+    {
+        println!("Solving Problem 23:");
+        benchmark(p23::solution);
+    }
+
     #[cfg(feature = "s67")]
     {
         println!("Solving Problem 67:");
