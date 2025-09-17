@@ -1,38 +1,69 @@
-/* p18: Maximum Path Sum I */
-pub fn solution(triangle: Vec<u64>) -> Result {
-    let mut path = vec![triangle[0]];
-    let mut current_x = 0;
+/* p18: Maximum Path Sum */
+pub fn solution(triangle: Vec<u64>) -> u64 {
+    assert!(!triangle.is_empty());
 
-    for l in 1..count_layers(triangle.len()) {
-        let layer = get_layer(&triangle, l);
+    let layer_count = count_layers(triangle.len());
 
-        if layer[current_x] > layer[current_x + 1] {
-            path.push(layer[current_x]);
-        } else {
-            path.push(layer[current_x + 1]);
-            current_x += 1;
+    if layer_count == 1 {
+        return *triangle.first().unwrap();
+    }
+
+    let last_layer = get_layer(&triangle, layer_count - 1);
+    let mut paths: Vec<(u64, u64, Vec<u64>)> = last_layer
+        .iter()
+        .enumerate()
+        .map(|p| (p.0 as u64, *p.1, Vec::new()))
+        .collect();
+
+    for l in (0..layer_count - 1).rev() {
+        let current_layer = get_layer(&triangle, l);
+        println!("Layer: {:?}", current_layer);
+
+        for p in &mut paths {
+            println!("{:?}", p);
+
+            let left = if p.0 == 0 {
+                0
+            } else {
+                current_layer[(p.0 - 1) as usize]
+            };
+
+            let right = if p.0 == current_layer.len() as u64 {
+                0
+            } else {
+                current_layer[p.0 as usize]
+            };
+
+            if right > left {
+                p.1 += right;
+                p.2.push(right);
+            } else {
+                p.0 -= 1;
+                p.1 += left;
+                p.2.push(left);
+            }
         }
     }
 
-    Result {
-        sum: path.iter().sum(),
-        path,
+    println!("Final");
+    for p in &mut paths {
+        println!("{:?}", p);
     }
+
+    paths
+        .iter()
+        .reduce(|a, b| if a.0 > b.0 { a } else { b })
+        .map(|p| p.1)
+        .unwrap()
 }
 
 pub const INPUT: &str = "75 95 64 17 47 82 18 35 87 10 20 04 82 47 65 19 01 23 75 03 34 88 02 77 73 07 63 67 99 65 04 28 06 16 70 92 41 41 26 56 83 40 80 70 33 41 48 72 33 47 32 37 16 94 29 53 71 44 65 25 43 91 52 97 51 14 70 11 33 28 77 73 17 78 39 68 17 57 91 71 52 38 17 14 91 43 58 50 27 29 48 63 66 04 68 89 53 67 30 73 16 69 87 40 31 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23";
 
 #[test]
 fn test() {
-    assert_eq!(
-        solution(string_to_triangle(EXAMPLE)),
-        Result {
-            sum: 23,
-            path: vec![3, 7, 4, 9]
-        }
-    );
+    assert_eq!(solution(string_to_triangle(EXAMPLE)), 23);
 
-    assert_eq!(solution(string_to_triangle(INPUT)).sum, 1064);
+    assert_eq!(solution(string_to_triangle(INPUT)), 1064);
 }
 
 #[derive(Debug, Eq, PartialEq)]
