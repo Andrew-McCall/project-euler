@@ -25,7 +25,7 @@ p17 = { path = "../p17", optional = true }
 p18 = { path = "../p18", optional = true }
 p19 = { path = "../p19", optional = true }
 p20 = { path = "../p20", optional = true }
-
+p21 = { path = "../p21", optional = true }
 p22 = { path = "../p22", optional = true }
 
 p67 = { path = "../p67", optional = true }
@@ -51,7 +51,7 @@ s17 = ["p17"]
 s18 = ["p18"]
 s19 = ["p19"]
 s20 = ["p20"]
-
+s21 = ["p21"]
 s22 = ["p22"]
 
 s67 = ["p67"]
@@ -76,7 +76,7 @@ default = [
     "s18",
     "s19",
     "s20",
-
+    "s21",
     "s22",
 
     "s67",

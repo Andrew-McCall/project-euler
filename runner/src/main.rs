@@ -158,6 +158,12 @@ fn main() {
         benchmark(|| p20::solution(100));
     }
 
+    #[cfg(feature = "s21")]
+    {
+        println!("Solving Problem 21:");
+        benchmark(|| p21::solution(10_000));
+    }
+
     #[cfg(feature = "s22")]
     {
         println!("Solving Problem 22:");
