@@ -18,19 +18,19 @@ fn main() {
     #[cfg(feature = "s1")]
     {
         println!("Solving Problem 1:");
-        benchmark(|| p1::solution(1000));
+        benchmark(|| p1::solution(1_000));
     }
 
     #[cfg(feature = "s2")]
     {
         println!("Solving Problem 2:");
-        benchmark(|| p2::solution(4000000));
+        benchmark(|| p2::solution(4_000_000));
     }
 
     #[cfg(feature = "s3")]
     {
         println!("Solving Problem 3:");
-        benchmark(|| p3::solution(600851475143));
+        benchmark(|| p3::solution(600_851_475_143));
     }
 
     #[cfg(feature = "s4")]
@@ -56,7 +56,7 @@ fn main() {
     #[cfg(feature = "s7")]
     {
         println!("Solving Problem 7:");
-        benchmark(|| p7::solution(10001));
+        benchmark(|| p7::solution(10_001));
     }
 
     #[cfg(feature = "s8")]
@@ -74,7 +74,7 @@ fn main() {
     #[cfg(feature = "s10")]
     {
         println!("Solving Problem 10:");
-        benchmark(|| p10::solution(2000000));
+        benchmark(|| p10::solution(2_000_000));
     }
 
     #[cfg(feature = "s11")]
@@ -116,13 +116,13 @@ fn main() {
     #[cfg(feature = "s16")]
     {
         println!("Solving Problem 16:");
-        benchmark(|| p16::solution(2, 1000));
+        benchmark(|| p16::solution(2, 1_000));
     }
 
     #[cfg(feature = "s17")]
     {
         println!("Solving Problem 17:");
-        benchmark(|| p17::solution(1000));
+        benchmark(|| p17::solution(1_000));
     }
 
     #[cfg(feature = "s18")]
@@ -191,7 +191,13 @@ fn main() {
     #[cfg(feature = "s25")]
     {
         println!("Solving Problem 25:");
-        benchmark(|| p25::solution(1000));
+        benchmark(|| p25::solution(1_000));
+    }
+
+    #[cfg(feature = "s26")]
+    {
+        println!("Solving Problem 26:");
+        benchmark(|| p26::solution(1_000));
     }
 
     if !unsafe { RAN } {

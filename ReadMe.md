@@ -114,4 +114,8 @@ Time elapsed: 0.00288258 seconds
 Solving Problem 25:
 Answer: 4782
 Time elapsed: 0.00000000 seconds
+
+Solving Problem 26:
+Answer: 983
+Time elapsed: 0.00875475 seconds
 ```
