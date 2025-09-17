@@ -122,4 +122,8 @@ Time elapsed: 0.00875475 seconds
 Solving Problem 27:
 Answer: -59231 (71) <= n^2 + n(-61) + 971
 Time elapsed: 0.00716446 seconds
+
+Solving Problem 28:
+Answer: 669171001
+Time elapsed: 0.00000004 seconds
 ```
