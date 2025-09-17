@@ -1,6 +1,6 @@
 use std::{fs::File, io::Read};
 
-/* p0: Example */
+/* p67: Maximum Path Sum II */
 pub fn solution(path: &str) -> u64 {
     p18::solution(read_input_file(path))
 }
