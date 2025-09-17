@@ -23,6 +23,8 @@ p16 = { path = "../p16", optional = true }
 p17 = { path = "../p17", optional = true }
 p18 = { path = "../p18", optional = true }
 
+p67 = { path = "../p67", optional = true }
+
 [features]
 s1 = ["p1"]
 s2 = ["p2"]
@@ -42,6 +44,8 @@ s15 = ["p15"]
 s16 = ["p16"]
 s17 = ["p17"]
 s18 = ["p18"]
+
+s67 = ["p67"]
 default = [
     "s1",
     "s2",
@@ -61,4 +65,6 @@ default = [
     "s16",
     "s17",
     "s18",
+
+    "s67",
 ]
