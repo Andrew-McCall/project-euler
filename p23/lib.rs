@@ -26,7 +26,7 @@ const BOUND: u64 = 28123;
 
 #[test]
 fn test() {
-    assert_eq!(solution(), 0);
+    assert_eq!(solution(), 4179871);
 }
 
 fn is_abundant(n: u64) -> bool {
