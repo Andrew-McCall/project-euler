@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+
 p1 = { path = "../p1", optional = true }
 p2 = { path = "../p2", optional = true }
 p3 = { path = "../p3", optional = true }
@@ -24,6 +25,8 @@ p17 = { path = "../p17", optional = true }
 p18 = { path = "../p18", optional = true }
 p19 = { path = "../p19", optional = true }
 p20 = { path = "../p20", optional = true }
+
+p22 = { path = "../p22", optional = true }
 
 p67 = { path = "../p67", optional = true }
 
@@ -49,6 +52,8 @@ s18 = ["p18"]
 s19 = ["p19"]
 s20 = ["p20"]
 
+s22 = ["p22"]
+
 s67 = ["p67"]
 default = [
     "s1",
@@ -71,6 +76,8 @@ default = [
     "s18",
     "s19",
     "s20",
+
+    "s22",
 
     "s67",
 ]
