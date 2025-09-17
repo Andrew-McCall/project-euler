@@ -68,28 +68,33 @@ Time elapsed: 0.00000011 seconds
 
 Solving Problem 16:
 1366
-Time elapsed: 0.00028279 seconds
+Time elapsed: 0.00028479 seconds
 
 Solving Problem 17:
 21124
-Time elapsed: 0.00179258 seconds
+Time elapsed: 0.00041621 seconds
 
 Solving Problem 18:
-N/A
+1074
+Time elapsed: 0.00000483 seconds
 
 Solving Problem 19:
 171
-Time elapsed: 0.00006685 seconds
+Time elapsed: 0.00010237 seconds
 
 Solving Problem 20:
 648
-Time elapsed: 0.00001073 seconds
+Time elapsed: 0.00001692 seconds
 
 Solving Problem 21:
 31626
-Time elapsed: 0.06461265 seconds
+Time elapsed: 0.03175287 seconds
 
 Solving Problem 22:
 871198282
-Time elapsed: 0.00120738 seconds
+Time elapsed: 0.00144904 seconds
+
+Solving Problem 67:
+7273
+Time elapsed: 0.00009375 seconds
 ```
