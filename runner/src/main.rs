@@ -136,17 +136,17 @@ fn main() {
         println!("Solving Problem 19:");
         benchmark(|| {
             p19::solution(
-                Date {
+                p19::Date {
                     year: 1901,
-                    month: Month::January,
+                    month: p19::Month::January,
                     day: 1,
-                    weekday: DayOfWeek::Tuesday,
+                    weekday: p19::DayOfWeek::Tuesday,
                 },
-                Date {
+                p19::Date {
                     year: 2000,
-                    month: Month::December,
+                    month: p19::Month::December,
                     day: 31,
-                    weekday: DayOfWeek::Sunday,
+                    weekday: p19::DayOfWeek::Sunday,
                 },
             )
         });
@@ -167,7 +167,7 @@ fn main() {
     #[cfg(feature = "s22")]
     {
         println!("Solving Problem 22:");
-        benchmark(|| p22::solution(p22::INPUT_PATH));
+        benchmark(|| p22::solution(p22::file_to_names(p22::INPUT_PATH)));
     }
 
     #[cfg(feature = "s67")]
