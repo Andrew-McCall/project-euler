@@ -152,6 +152,12 @@ fn main() {
         });
     }
 
+    #[cfg(feature = "s20")]
+    {
+        println!("Solving Problem 20:");
+        benchmark(|| p20::solution(100));
+    }
+
     #[cfg(feature = "s67")]
     {
         println!("Solving Problem 67:");
