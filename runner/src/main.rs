@@ -188,6 +188,12 @@ fn main() {
         benchmark(|| p24::solution(vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 1_000_000));
     }
 
+    #[cfg(feature = "s25")]
+    {
+        println!("Solving Problem 25:");
+        benchmark(|| p25::solution(1000));
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected:");
     }
