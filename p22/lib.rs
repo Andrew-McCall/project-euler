@@ -27,7 +27,7 @@ pub fn file_to_names(path: &str) -> Vec<String> {
 
 #[test]
 fn test() {
-    assert_eq!(solution(file_to_names(INPUT_PATH)), 0);
+    assert_eq!(solution(file_to_names(INPUT_PATH)), 871198282);
 }
 
 fn get_worth(letter: char) -> u8 {

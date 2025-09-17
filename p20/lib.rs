@@ -21,7 +21,7 @@ pub fn solution(n: u64) -> u64 {
 #[test]
 fn test() {
     assert_eq!(solution(10), 27);
-    assert_eq!(solution(100), 0);
+    assert_eq!(solution(100), 648);
 }
 
 // Similar to p16

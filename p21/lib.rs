@@ -30,7 +30,7 @@ pub fn solution(bound: u64) -> u64 {
 
 #[test]
 fn test() {
-    assert_eq!(solution(10000), 0);
+    assert_eq!(solution(10000), 31626);
 }
 
 pub fn get_proper_divisors_sum(n: u64) -> u64 {
