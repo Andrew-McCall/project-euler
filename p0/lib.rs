@@ -1,10 +1,10 @@
 /* p0: Example */
-pub fn solution() -> bool {
+pub fn solution() -> u64 {
     println!("Hello, world!");
-    true
+    0
 }
 
 #[test]
 fn test() {
-    assert!(solution());
+    assert_eq!(solution(), 0);
 }
