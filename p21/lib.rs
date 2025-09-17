@@ -12,15 +12,13 @@ pub fn solution(bound: u64) -> u64 {
 
         let sum = get_proper_divisors_sum(i);
         divsor_sums[i as usize] = sum;
-        if sum <= bound {
-            if divsor_sums[sum as usize] == 0 {
-                let other_sum = get_proper_divisors_sum(sum);
-                divsor_sums[sum as usize] = other_sum;
+        if sum <= bound && divsor_sums[sum as usize] == 0 {
+            let other_sum = get_proper_divisors_sum(sum);
+            divsor_sums[sum as usize] = other_sum;
 
-                if other_sum == i {
-                    result += i;
-                    result += sum;
-                }
+            if other_sum == i {
+                result += i;
+                result += sum;
             }
         }
     }
