@@ -134,7 +134,7 @@ fn main() {
     #[cfg(feature = "s67")]
     {
         println!("Solving Problem 67:");
-        benchmark(|| p67::solution(s67::INPUT_PATH));
+        benchmark(|| p67::solution(p67::INPUT_PATH));
     }
 
     if !unsafe { RAN } {
