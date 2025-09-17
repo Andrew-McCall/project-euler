@@ -7,4 +7,4 @@ edition = "2024"
 path = "lib.rs"
 
 [dependencies]
-p18 = { path = "../p18" }
+p18 = { path = "../p018" }

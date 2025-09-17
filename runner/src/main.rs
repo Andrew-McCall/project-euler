@@ -167,7 +167,7 @@ fn main() {
     #[cfg(feature = "s22")]
     {
         println!("Solving Problem 22:");
-        benchmark(|| p22::solution(p22::file_to_names(&format!("p22/{}", p22::INPUT_PATH))));
+        benchmark(|| p22::solution(p22::file_to_names(&format!("p022/{}", p22::INPUT_PATH))));
     }
 
     #[cfg(feature = "s23")]
@@ -179,7 +179,7 @@ fn main() {
     #[cfg(feature = "s67")]
     {
         println!("Solving Problem 67:");
-        benchmark(|| p67::solution(&format!("p67/{}", p67::INPUT_PATH)));
+        benchmark(|| p67::solution(&format!("p067/{}", p67::INPUT_PATH)));
     }
 
     #[cfg(feature = "s24")]

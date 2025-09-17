@@ -5,36 +5,36 @@ edition = "2024"
 
 [dependencies]
 
-p1 = { path = "../p1", optional = true }
-p2 = { path = "../p2", optional = true }
-p3 = { path = "../p3", optional = true }
-p4 = { path = "../p4", optional = true }
-p5 = { path = "../p5", optional = true }
-p6 = { path = "../p6", optional = true }
-p7 = { path = "../p7", optional = true }
-p8 = { path = "../p8", optional = true }
-p9 = { path = "../p9", optional = true }
-p10 = { path = "../p10", optional = true }
-p11 = { path = "../p11", optional = true }
-p12 = { path = "../p12", optional = true }
-p13 = { path = "../p13", optional = true }
-p14 = { path = "../p14", optional = true }
-p15 = { path = "../p15", optional = true }
-p16 = { path = "../p16", optional = true }
-p17 = { path = "../p17", optional = true }
-p18 = { path = "../p18", optional = true }
-p19 = { path = "../p19", optional = true }
-p20 = { path = "../p20", optional = true }
-p21 = { path = "../p21", optional = true }
-p22 = { path = "../p22", optional = true }
-p23 = { path = "../p23", optional = true }
-p24 = { path = "../p24", optional = true }
-p25 = { path = "../p25", optional = true }
-p26 = { path = "../p26", optional = true }
-p27 = { path = "../p27", optional = true }
-p28 = { path = "../p28", optional = true }
+p1 = { path = "../p001", optional = true }
+p2 = { path = "../p002", optional = true }
+p3 = { path = "../p003", optional = true }
+p4 = { path = "../p004", optional = true }
+p5 = { path = "../p005", optional = true }
+p6 = { path = "../p006", optional = true }
+p7 = { path = "../p007", optional = true }
+p8 = { path = "../p008", optional = true }
+p9 = { path = "../p009", optional = true }
+p10 = { path = "../p010", optional = true }
+p11 = { path = "../p011", optional = true }
+p12 = { path = "../p012", optional = true }
+p13 = { path = "../p013", optional = true }
+p14 = { path = "../p014", optional = true }
+p15 = { path = "../p015", optional = true }
+p16 = { path = "../p016", optional = true }
+p17 = { path = "../p017", optional = true }
+p18 = { path = "../p018", optional = true }
+p19 = { path = "../p019", optional = true }
+p20 = { path = "../p020", optional = true }
+p21 = { path = "../p021", optional = true }
+p22 = { path = "../p022", optional = true }
+p23 = { path = "../p023", optional = true }
+p24 = { path = "../p024", optional = true }
+p25 = { path = "../p025", optional = true }
+p26 = { path = "../p026", optional = true }
+p27 = { path = "../p027", optional = true }
+p28 = { path = "../p028", optional = true }
 
-p67 = { path = "../p67", optional = true }
+p67 = { path = "../p067", optional = true }
 
 [features]
 s1 = ["p1"]
