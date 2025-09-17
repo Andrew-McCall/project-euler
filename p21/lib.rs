@@ -5,7 +5,7 @@ pub fn solution(bound: u64) -> u64 {
     let mut result = 0;
     let mut divsor_sums = vec![0; bound as usize];
 
-    for i in 0..bound {
+    for i in 0..(bound - 1) {
         if divsor_sums[i as usize] > 0 {
             continue;
         }
