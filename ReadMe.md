@@ -4,97 +4,102 @@ PE Friend Code: 2268407_ikUAySi1UxKhFEkAR1BpvnUuxlCkI1PJ
 
 ```c
 Solving Problem 1:
-233168
-Time elapsed: 0.00000067 seconds
+Answer: 233168
+Time elapsed: 0.00000063 seconds
 
 Solving Problem 2:
-4613732
-Time elapsed: 0.00000000 seconds
+Answer: 4613732
+Time elapsed: 0.00000004 seconds
 
 Solving Problem 3:
-6857
-Time elapsed: 0.00000308 seconds
+Answer: 6857
+Time elapsed: 0.00000283 seconds
 
 Solving Problem 4:
-906609 = 993 * 913
-Time elapsed: 0.00040033 seconds
+Answer: 906609 = 993 * 913
+Time elapsed: 0.00038221 seconds
 
 Solving Problem 5:
-232792560
-Time elapsed: 0.00000038 seconds
+Answer: 232792560
+Time elapsed: 0.00000033 seconds
 
 Solving Problem 6:
-25164150
+Answer: 25164150
 Time elapsed: 0.00000004 seconds
+
 Solving Problem 6 alt:
-25164150
+Answer: 25164150
 Time elapsed: 0.00000004 seconds
 
 Solving Problem 7:
-104743
-Time elapsed: 0.00317467 seconds
+Answer: 104743
+Time elapsed: 0.00324700 seconds
 
 Solving Problem 8:
-23514624000@197
-Time elapsed: 0.00000896 seconds
+Answer: 23514624000@197
+Time elapsed: 0.00001412 seconds
 
 Solving Problem 9:
-31875000 = 200 * 375 * 425
-Time elapsed: 0.04316317 seconds
+Answer: 31875000 = 200 * 375 * 425
+Time elapsed: 0.04254467 seconds
 
 Solving Problem 10:
-142913828922
-Time elapsed: 0.11277517 seconds
+Answer: 142913828922
+Time elapsed: 0.11203921 seconds
 
 Solving Problem 11:
-70600674 = [87 @ (3, 15), 97 @ (4, 14), 94 @ (5, 13), 89 @ (6, 12)]
-Time elapsed: 0.00002829 seconds
+Answer: 70600674 = [87 @ (3, 15), 97 @ (4, 14), 94 @ (5, 13), 89 @ (6, 12)]
+Time elapsed: 0.00006421 seconds
 
 Solving Problem 12:
-76576500
-Time elapsed: 0.06997496 seconds
+Answer: 76576500
+Time elapsed: 0.05375729 seconds
 
 Solving Problem 13:
-5537376230
-Time elapsed: 0.00000818 seconds
+Answer: 5537376230
+Time elapsed: 0.00001496 seconds
 
 Solving Problem 14:
-837799 (524)
-Time elapsed: 0.09640661 seconds
+Answer: 837799 (524)
+Time elapsed: 0.13215033 seconds
 
 Solving Problem 15:
-137846528820
-Time elapsed: 0.00000011 seconds
+Answer: 137846528820
+Time elapsed: 0.00000008 seconds
+
+Solving Problem 15:
+Answer: 137846528820
+Time elapsed: 0.00000008 seconds
 
 Solving Problem 16:
-1366
-Time elapsed: 0.00028479 seconds
+Answer: 1366
+Time elapsed: 0.00028646 seconds
 
 Solving Problem 17:
-21124
-Time elapsed: 0.00041621 seconds
+Answer: 21124
+Time elapsed: 0.00041867 seconds
 
 Solving Problem 18:
-1074
-Time elapsed: 0.00000483 seconds
+Answer: 1074
+Time elapsed: 0.00000462 seconds
 
 Solving Problem 19:
-171
-Time elapsed: 0.00010237 seconds
+Answer: 171
+Time elapsed: 0.00012017 seconds
 
 Solving Problem 20:
-648
-Time elapsed: 0.00001692 seconds
+Answer: 648
+Time elapsed: 0.00003504 seconds
 
 Solving Problem 21:
-31626
-Time elapsed: 0.03175287 seconds
+Answer: 31626
+Time elapsed: 0.03217688 seconds
 
 Solving Problem 22:
-871198282
-Time elapsed: 0.00144904 seconds
+Answer: 871198282
+Time elapsed: 0.00143667 seconds
 
 Solving Problem 67:
-7273
-Time elapsed: 0.00009375 seconds
+Answer: 7273
+Time elapsed: 0.00008992 seconds
 ```

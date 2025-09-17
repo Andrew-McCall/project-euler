@@ -10,7 +10,7 @@ fn benchmark<T: Display>(action: impl FnOnce() -> T) {
     let result = action();
     let duration = start.elapsed();
 
-    println!("{}", result);
+    println!("Answer: {}", result);
     println!("Time elapsed: {:.8} seconds\n", duration.as_secs_f64());
 }
 
