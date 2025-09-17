@@ -15,5 +15,5 @@ pub fn read_input_file(path: &str) -> Vec<u64> {
 
 #[test]
 fn test() {
-    assert_eq!(solution(INPUT_PATH), 0);
+    assert_eq!(solution(INPUT_PATH), 7273);
 }
