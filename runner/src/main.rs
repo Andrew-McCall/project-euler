@@ -218,6 +218,12 @@ fn main() {
         benchmark(|| p29::solution(100));
     }
 
+    #[cfg(feature = "s30")]
+    {
+        println!("Solving Problem 30:");
+        benchmark(|| p30::solution(5));
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected:");
     }

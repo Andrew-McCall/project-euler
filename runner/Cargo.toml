@@ -34,6 +34,7 @@ p26 = { path = "../p026", optional = true }
 p27 = { path = "../p027", optional = true }
 p28 = { path = "../p028", optional = true }
 p29 = { path = "../p029", optional = true }
+p30 = { path = "../p030", optional = true }
 
 p67 = { path = "../p067", optional = true }
 
@@ -67,6 +68,7 @@ s26 = ["p26"]
 s27 = ["p27"]
 s28 = ["p28"]
 s29 = ["p29"]
+s30 = ["p30"]
 
 s67 = ["p67"]
 default = [
@@ -99,6 +101,7 @@ default = [
     "s27",
     "s28",
     "s29",
+    "s30",
 
     "s67",
 ]
