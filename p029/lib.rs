@@ -40,9 +40,7 @@ pub fn solution(max_base: u64) -> u64 {
             } else {
                 factors
                     .iter()
-                    .flat_map(|&(p, exp_after)| {
-                        std::iter::repeat_n(p, (exp_after / exponent_gcd) as usize)
-                    })
+                    .flat_map(|f| std::iter::repeat_n(f.0, (f.1 / exponent_gcd) as usize))
                     .product::<u64>()
             };
 
