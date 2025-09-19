@@ -30,26 +30,20 @@ pub fn solution(max_base: u64) -> u64 {
                 factors.push((base, exponent));
             }
 
-            let mut exponent_gcd = 0;
-            for &(_, exp_after) in &factors {
-                exponent_gcd = if exponent_gcd == 0 {
-                    exp_after
-                } else {
-                    gcd(exponent_gcd, exp_after)
-                };
-            }
+            let exponent_gcd = factors
+                .iter()
+                .map(|e| e.1)
+                .fold(0, |acc, x| if acc == 0 { x } else { gcd(acc, x) });
 
             let smallest_base = if exponent_gcd == 0 {
                 a
             } else {
-                let mut sb = 1;
-                for &(p, exp_after) in &factors {
-                    let power = exp_after / exponent_gcd;
-                    for _ in 0..power {
-                        sb *= p;
-                    }
-                }
-                sb
+                factors
+                    .iter()
+                    .flat_map(|&(p, exp_after)| {
+                        std::iter::repeat_n(p, (exp_after / exponent_gcd) as usize)
+                    })
+                    .product::<u64>()
             };
 
             distinct.insert((exponent_gcd, smallest_base));
