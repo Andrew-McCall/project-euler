@@ -230,6 +230,12 @@ fn main() {
         benchmark(|| p31::solution(&[1, 5, 2, 10, 20, 50, 100, 200], 200));
     }
 
+    #[cfg(feature = "s32")]
+    {
+        println!("Solving Problem 32:");
+        benchmark(p32::solution);
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected:");
     }
