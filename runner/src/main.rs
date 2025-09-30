@@ -269,7 +269,13 @@ fn main() {
     #[cfg(feature = "s39")]
     {
         println!("Solving Problem 39:");
-        benchmark(|| p39::solution(1000));
+        benchmark(|| p39::solution(1_000));
+    }
+
+    #[cfg(feature = "s40")]
+    {
+        println!("Solving Problem 40:");
+        benchmark(|| p40::solution(1_000_000));
     }
 
     if !unsafe { RAN } {

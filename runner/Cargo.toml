@@ -43,6 +43,7 @@ p35 = { path = "../p035", optional = true }
 p36 = { path = "../p036", optional = true }
 p37 = { path = "../p037", optional = true }
 p39 = { path = "../p039", optional = true }
+p40 = { path = "../p040", optional = true }
 
 p67 = { path = "../p067", optional = true }
 
@@ -85,6 +86,7 @@ s35 = ["p35"]
 s36 = ["p36"]
 s37 = ["p37"]
 s39 = ["p39"]
+s40 = ["p40"]
 
 s67 = ["p67"]
 default = [
@@ -126,6 +128,7 @@ default = [
     "s36",
     "s37",
     "s39",
+    "s40",
 
     "s67",
 ]
