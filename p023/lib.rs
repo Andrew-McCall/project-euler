@@ -32,7 +32,7 @@ fn test() {
 fn is_abundant(n: u64) -> bool {
     let mut sum = 1;
     for d in 2..n {
-        if n % d == 0 {
+        if n.is_multiple_of(d) {
             sum += d;
         }
     }

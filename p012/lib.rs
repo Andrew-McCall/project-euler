@@ -30,7 +30,7 @@ fn count_factors(n: u64) -> u64 {
     let mut count = 0;
 
     for i in 1..=sqrt {
-        if n % i == 0 {
+        if n.is_multiple_of(i) {
             count += 2;
         }
     }

@@ -3,11 +3,11 @@ pub fn solution(mut n: u64) -> u64 {
     let mut max_factor = 1;
 
     // Handle factor 2
-    if n % 2 == 0 {
+    if n.is_multiple_of(2) {
         if is_prime(2) {
             max_factor = 2;
         }
-        while n % 2 == 0 {
+        while n.is_multiple_of(2) {
             n /= 2;
         }
     }
@@ -15,9 +15,9 @@ pub fn solution(mut n: u64) -> u64 {
     // Check odd numbers only
     let mut f = 3;
     while f * f <= n {
-        if n % f == 0 && is_prime(f) {
+        if n.is_multiple_of(f) && is_prime(f) {
             max_factor = f;
-            while n % f == 0 {
+            while n.is_multiple_of(f) {
                 n /= f;
             }
         }
@@ -64,7 +64,7 @@ fn is_prime(n: u64) -> bool {
     // Write n-1 as 2^s * d
     let mut d = n - 1;
     let mut s = 0;
-    while d % 2 == 0 {
+    while d.is_multiple_of(2) {
         d /= 2;
         s += 1;
     }

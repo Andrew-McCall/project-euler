@@ -36,7 +36,7 @@ pub fn get_proper_divisors_sum(n: u64) -> u64 {
     let mut sum = 1;
 
     for d in 2..n {
-        if n % d == 0 {
+        if n.is_multiple_of(d) {
             sum += d;
         }
     }
