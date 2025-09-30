@@ -162,4 +162,8 @@ Time elapsed: 0.00372513 seconds
 Solving Problem 37:
 Answer: 748317
 Time elapsed: 0.04518004 seconds
+
+Solving Problem 39:
+Answer: 840
+Time elapsed: 0.00033009 seconds
 ```
