@@ -127,6 +127,10 @@ name = "p36"
 version = "0.1.0"
 
 [[package]]
+name = "p37"
+version = "0.1.0"
+
+[[package]]
 name = "p4"
 version = "0.1.0"
 
@@ -191,6 +195,7 @@ dependencies = [
  "p34",
  "p35",
  "p36",
+ "p37",
  "p4",
  "p5",
  "p6",
