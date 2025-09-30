@@ -14,7 +14,7 @@ pub fn solution(bound: u64) -> u64 {
 #[test]
 fn test() {
     assert_eq!(solution(1_000), 1772);
-    assert_eq!(solution(1_000_000), 0);
+    assert_eq!(solution(1_000_000), 872187);
 }
 
 fn is_base10_palindrome(mut n: u64) -> bool {
