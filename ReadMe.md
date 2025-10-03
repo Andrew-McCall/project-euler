@@ -174,4 +174,8 @@ Time elapsed: 0.00030974 seconds
 Solving Problem 40:
 Answer: 210
 Time elapsed: 0.00734076 seconds
+
+Solving Problem 41:
+Answer: 7652413
+Time elapsed: 0.00002348 seconds
 ```
