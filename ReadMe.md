@@ -161,13 +161,17 @@ Time elapsed: 0.00372513 seconds
 
 Solving Problem 37:
 Answer: 748317
-Time elapsed: 0.04518004 seconds
+Time elapsed: 0.05568526 seconds
+
+Solving Problem 38:
+Answer: 932718654
+Time elapsed: 0.00554195 seconds
 
 Solving Problem 39:
 Answer: 840
-Time elapsed: 0.00033009 seconds
+Time elapsed: 0.00030974 seconds
 
 Solving Problem 40:
 Answer: 210
-Time elapsed: 0.00732677 seconds
+Time elapsed: 0.00734076 seconds
 ```
