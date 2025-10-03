@@ -290,6 +290,12 @@ fn main() {
         benchmark(p41::solution);
     }
 
+    #[cfg(feature = "s42")]
+    {
+        println!("Solving Problem 42:");
+        benchmark(|| p42::solution(p42::file_to_words(&format!("p042/{}", p42::EXAMPLE_FILE))));
+    }
+
     if !unsafe { RAN } {
         println!("No solution(s) selected:");
     }

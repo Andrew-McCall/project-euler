@@ -178,4 +178,8 @@ Time elapsed: 0.00734076 seconds
 Solving Problem 41:
 Answer: 7652413
 Time elapsed: 0.00002348 seconds
+
+Solving Problem 42:
+Answer: 162
+Time elapsed: 0.00013764 seconds
 ```
