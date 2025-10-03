@@ -266,6 +266,12 @@ fn main() {
         benchmark(p37::solution);
     }
 
+    #[cfg(feature = "s38")]
+    {
+        println!("Solving Problem 38:");
+        benchmark(p38::solution);
+    }
+
     #[cfg(feature = "s39")]
     {
         println!("Solving Problem 39:");
