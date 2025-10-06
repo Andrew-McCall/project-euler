@@ -9,7 +9,7 @@ pub fn solution(bound: u64) -> u64 {
             return false;
         }
         let mut n = n;
-        while n % 10 == 0 {
+        while n.is_multiple_of(10) {
             n /= 10;
         }
         n == 1
