@@ -5,23 +5,23 @@ PE Friend Code: 2268407_ikUAySi1UxKhFEkAR1BpvnUuxlCkI1PJ
 ```c
 Solving Problem 1:
 Answer: 233168
-Time elapsed: 0.00000212 seconds
+Time elapsed: 0.00000051 seconds
 
 Solving Problem 2:
 Answer: 4613732
-Time elapsed: 0.00000008 seconds
+Time elapsed: 0.00000000 seconds
 
 Solving Problem 3:
 Answer: 6857
-Time elapsed: 0.00000558 seconds
+Time elapsed: 0.00000000 seconds
 
 Solving Problem 4:
 Answer: 906609 = 993 * 913
-Time elapsed: 0.00082675 seconds
+Time elapsed: 0.00030018 seconds
 
 Solving Problem 5:
 Answer: 232792560
-Time elapsed: 0.00000033 seconds
+Time elapsed: 0.00000028 seconds
 
 Solving Problem 6:
 Answer: 25164150
@@ -33,157 +33,157 @@ Time elapsed: 0.00000000 seconds
 
 Solving Problem 7:
 Answer: 104743
-Time elapsed: 0.00627600 seconds
+Time elapsed: 0.00360565 seconds
 
 Solving Problem 8:
 Answer: 23514624000@197
-Time elapsed: 0.00001983 seconds
+Time elapsed: 0.00000631 seconds
 
 Solving Problem 9:
 Answer: 31875000 = 200 * 375 * 425
-Time elapsed: 0.03979625 seconds
+Time elapsed: 0.02978446 seconds
 
 Solving Problem 10:
 Answer: 142913828922
-Time elapsed: 0.11388275 seconds
+Time elapsed: 0.11159268 seconds
 
 Solving Problem 11:
 Answer: 70600674 = [87 @ (3, 15), 97 @ (4, 14), 94 @ (5, 13), 89 @ (6, 12)]
-Time elapsed: 0.00008117 seconds
+Time elapsed: 0.00004575 seconds
 
 Solving Problem 12:
 Answer: 76576500
-Time elapsed: 0.05381700 seconds
+Time elapsed: 0.05373089 seconds
 
 Solving Problem 13:
 Answer: 5537376230
-Time elapsed: 0.00001212 seconds
+Time elapsed: 0.00000790 seconds
 
 Solving Problem 14:
 Answer: 837799 (524)
-Time elapsed: 0.13272558 seconds
-
-Solving Problem 15:
-Answer: 137846528820
-Time elapsed: 0.00000012 seconds
+Time elapsed: 0.13298201 seconds
 
 Solving Problem 15:
 Answer: 137846528820
 Time elapsed: 0.00000008 seconds
 
+Solving Problem 15:
+Answer: 137846528820
+Time elapsed: 0.00000004 seconds
+
 Solving Problem 16:
 Answer: 1366
-Time elapsed: 0.00029258 seconds
+Time elapsed: 0.00026280 seconds
 
 Solving Problem 17:
 Answer: 21124
-Time elapsed: 0.00032946 seconds
+Time elapsed: 0.00029822 seconds
 
 Solving Problem 18:
 Answer: 1074
-Time elapsed: 0.00002150 seconds
+Time elapsed: 0.00000421 seconds
 
 Solving Problem 19:
 Answer: 171
-Time elapsed: 0.00010792 seconds
+Time elapsed: 0.00010090 seconds
 
 Solving Problem 20:
 Answer: 648
-Time elapsed: 0.00002129 seconds
+Time elapsed: 0.00001517 seconds
 
 Solving Problem 21:
 Answer: 31626
-Time elapsed: 0.03190579 seconds
+Time elapsed: 0.03167413 seconds
 
 Solving Problem 22:
 Answer: 871198282
-Time elapsed: 0.00128642 seconds
+Time elapsed: 0.00110801 seconds
 
 Solving Problem 23:
 Answer: 4179871
-Time elapsed: 0.27285929 seconds
+Time elapsed: 0.27126811 seconds
 
 Solving Problem 24:
 Answer: 2783915460
-Time elapsed: 0.00278313 seconds
+Time elapsed: 0.00313826 seconds
 
 Solving Problem 25:
 Answer: 4782
-Time elapsed: 0.00000004 seconds
+Time elapsed: 0.00000000 seconds
 
 Solving Problem 26:
 Answer: 983
-Time elapsed: 0.00881100 seconds
+Time elapsed: 0.00866411 seconds
 
 Solving Problem 27:
 Answer: -59231 (71) <= n^2 + n(-61) + 971
-Time elapsed: 0.00720187 seconds
+Time elapsed: 0.00687107 seconds
 
 Solving Problem 28:
 Answer: 669171001
-Time elapsed: 0.00000004 seconds
+Time elapsed: 0.00000000 seconds
 
 Solving Problem 29:
 Answer: 9183
-Time elapsed: 0.00082654 seconds
+Time elapsed: 0.00079793 seconds
 
 Solving Problem 30:
 Answer: 443839
-Time elapsed: 0.06434171 seconds
+Time elapsed: 0.06387035 seconds
 
 Solving Problem 31:
 Answer: 73682
-Time elapsed: 0.00460133 seconds
+Time elapsed: 0.00378685 seconds
 
 Solving Problem 32:
 Answer: 45228
-Time elapsed: 0.50275125 seconds
+Time elapsed: 0.50310543 seconds
 
 Solving Problem 33:
 Answer: 100
-Time elapsed: 0.00001025 seconds
+Time elapsed: 0.00000954 seconds
 
 Solving Problem 34:
 Answer: 40730
-Time elapsed: 0.00242508 seconds
+Time elapsed: 0.00256705 seconds
 
 Solving Problem 35:
 Answer: 55
-Time elapsed: 0.06337133 seconds
+Time elapsed: 0.06338709 seconds
 
 Solving Problem 36:
 Answer: 872187
-Time elapsed: 0.00379229 seconds
+Time elapsed: 0.00376871 seconds
 
 Solving Problem 37:
 Answer: 748317
-Time elapsed: 0.04551750 seconds
+Time elapsed: 0.04506681 seconds
 
 Solving Problem 38:
 Answer: 932718654
-Time elapsed: 0.01120287 seconds
+Time elapsed: 0.01108133 seconds
 
 Solving Problem 39:
 Answer: 840
-Time elapsed: 0.00010133 seconds
+Time elapsed: 0.00010037 seconds
 
 Solving Problem 40:
 Answer: 210
-Time elapsed: 0.01505037 seconds
+Time elapsed: 0.01477008 seconds
 
 Solving Problem 41:
 Answer: 7652413
-Time elapsed: 0.00002154 seconds
+Time elapsed: 0.00000803 seconds
 
 Solving Problem 42:
 Answer: 162
-Time elapsed: 0.00023454 seconds
+Time elapsed: 0.00010131 seconds
 
 Solving Problem 43:
 Answer: 16695334890
-Time elapsed: 0.01718983 seconds
+Time elapsed: 0.01493499 seconds
 
 Solving Problem 67:
 Answer: 7273
-Time elapsed: 0.00016750 seconds
+Time elapsed: 0.00006111 seconds
 ```

@@ -52,6 +52,7 @@ p43 = { path = "../p043", optional = true }
 p67 = { path = "../p067", optional = true }
 
 [features]
+benchmark = []
 s1 = ["p1"]
 s2 = ["p2"]
 s3 = ["p3"]
@@ -97,7 +98,10 @@ s42 = ["p42"]
 s43 = ["p43"]
 
 s67 = ["p67"]
+
 default = [
+    "benchmark",
+
     "s1",
     "s2",
     "s3",
