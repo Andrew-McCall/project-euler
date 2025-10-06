@@ -4,12 +4,7 @@ pub fn solution(mut n: u64) -> u64 {
 
     // Handle factor 2
     if n.is_multiple_of(2) {
-        if is_prime(2) {
-            max_factor = 2;
-        }
-        while n.is_multiple_of(2) {
-            n /= 2;
-        }
+        max_factor = 2;
     }
 
     // Check odd numbers only
@@ -52,54 +47,34 @@ fn test_is_prime() {
 
 // Miller–Rabin
 fn is_prime(n: u64) -> bool {
-    match n {
-        0 => return false,
-        1 => return false,
-        2 => return true,
-        3 => return true,
-        n if n % 2 == 0 => return false,
-        _ => {}
+    if n < 2 {
+        return false;
+    }
+    if n == 2 {
+        return true;
     }
 
-    // Write n-1 as 2^s * d
-    let mut d = n - 1;
-    let mut s = 0;
-    while d.is_multiple_of(2) {
-        d /= 2;
-        s += 1;
+    if n.is_multiple_of(2) {
+        return false;
     }
 
-    let bases: [u64; 8] = [2, 3, 5, 7, 11, 13, 17, 19];
-
-    'outer: for &a in &bases {
-        if a >= n {
-            continue;
+    for i in (3..=(n as f64).sqrt() as u64).step_by(2) {
+        if n.is_multiple_of(i) {
+            return false;
         }
-        let mut x = mod_pow(a, d, n);
-        if x == 1 || x == n - 1 {
-            continue;
-        }
-        for _ in 0..s - 1 {
-            x = mod_pow(x, 2, n);
-            if x == n - 1 {
-                continue 'outer;
-            }
-        }
-        return false; // composite
     }
-
-    true // probably prime
+    true
 }
 
-fn mod_pow(mut base: u64, mut exp: u64, modulus: u64) -> u64 {
-    let mut result: u64 = 1;
-    base %= modulus;
-    while exp > 0 {
-        if exp % 2 == 1 {
-            result = result.wrapping_mul(base) % modulus;
-        }
-        base = base.wrapping_mul(base) % modulus;
-        exp /= 2;
-    }
-    result
-}
+// fn mod_pow(mut base: u64, mut exp: u64, modulus: u64) -> u64 {
+//     let mut result: u64 = 1;
+//     base %= modulus;
+//     while exp > 0 {
+//         if exp % 2 == 1 {
+//             result = result.wrapping_mul(base) % modulus;
+//         }
+//         base = base.wrapping_mul(base) % modulus;
+//         exp /= 2;
+//     }
+//     result
+// }
