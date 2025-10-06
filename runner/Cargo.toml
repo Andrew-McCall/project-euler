@@ -52,7 +52,11 @@ p43 = { path = "../p043", optional = true }
 p67 = { path = "../p067", optional = true }
 
 [features]
-benchmark = []
+skipwarm = []
+bench3 = []
+bench10 = []
+bench100 = []
+bench1000 = []
 s1 = ["p1"]
 s2 = ["p2"]
 s3 = ["p3"]
@@ -100,7 +104,7 @@ s43 = ["p43"]
 s67 = ["p67"]
 
 default = [
-    "benchmark",
+    "bench10",
 
     "s1",
     "s2",

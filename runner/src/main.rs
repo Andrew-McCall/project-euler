@@ -3,15 +3,33 @@ use std::time::Instant;
 
 static mut RAN: bool = false;
 
+#[cfg(any(
+    all(feature = "bench3", feature = "bench10"),
+    all(feature = "bench3", feature = "bench100"),
+    all(feature = "bench3", feature = "bench1000"),
+    all(feature = "bench10", feature = "bench100"),
+    all(feature = "bench10", feature = "bench1000"),
+    all(feature = "bench100", feature = "bench1000"),
+))]
+compile_error!("Only one benchmarking feature may be enabled at a time.");
+
 fn benchmark<T: Display>(action: impl Fn() -> T) {
     unsafe { RAN = true };
 
+    #[cfg(not(feature = "skipwarm"))]
     let _ = action();
 
-    #[cfg(feature = "benchmark")]
-    const RUNS: u32 = 10;
-    #[cfg(not(feature = "benchmark"))]
-    const RUNS: u32 = 1;
+    const RUNS: u32 = if cfg!(feature = "bench3") {
+        3
+    } else if cfg!(feature = "bench10") {
+        10
+    } else if cfg!(feature = "bench100") {
+        100
+    } else if cfg!(feature = "bench1000") {
+        1000
+    } else {
+        1
+    };
 
     let start = Instant::now();
     let result = action();
