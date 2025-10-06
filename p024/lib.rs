@@ -24,11 +24,7 @@ pub fn solution(mut seq: Vec<u64>, n: u64) -> u64 {
         seq[pivot + 1..].reverse();
     }
 
-    seq.iter()
-        .map(|d| d.to_string())
-        .collect::<String>()
-        .parse()
-        .unwrap()
+    seq.iter().fold(0, |acc, &d| acc * 10 + d)
 }
 
 #[test]
