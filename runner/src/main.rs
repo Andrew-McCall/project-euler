@@ -176,12 +176,6 @@ fn main() {
         benchmark(p23::solution);
     }
 
-    #[cfg(feature = "s67")]
-    {
-        println!("Solving Problem 67:");
-        benchmark(|| p67::solution(&format!("p067/{}", p67::INPUT_PATH)));
-    }
-
     #[cfg(feature = "s24")]
     {
         println!("Solving Problem 24:");
@@ -294,6 +288,12 @@ fn main() {
     {
         println!("Solving Problem 42:");
         benchmark(|| p42::solution(p42::file_to_words(&format!("p042/{}", p42::EXAMPLE_FILE))));
+    }
+
+    #[cfg(feature = "s67")]
+    {
+        println!("Solving Problem 67:");
+        benchmark(|| p67::solution(&format!("p067/{}", p67::INPUT_PATH)));
     }
 
     if !unsafe { RAN } {
