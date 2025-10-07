@@ -191,6 +191,10 @@ Solving Problem 45:
 Answer: 1533776805
 Time elapsed: 0.00104543 seconds
 
+Solving Problem 46:
+Answer: 5777
+Time elapsed: 0.00128512 seconds
+
 Solving Problem 67:
 Answer: 7273
 Time elapsed: 0.00006111 seconds
