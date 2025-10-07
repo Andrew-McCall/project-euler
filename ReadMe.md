@@ -183,6 +183,10 @@ Solving Problem 43:
 Answer: 16695334890
 Time elapsed: 0.01493499 seconds
 
+Solving Problem 44:
+Answer: 5482660
+Time elapsed: 0.08170716 seconds
+
 Solving Problem 67:
 Answer: 7273
 Time elapsed: 0.00006111 seconds
