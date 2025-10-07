@@ -187,6 +187,10 @@ Solving Problem 44:
 Answer: 5482660
 Time elapsed: 0.08170716 seconds
 
+Solving Problem 45:
+Answer: 1533776805
+Time elapsed: 0.00104543 seconds
+
 Solving Problem 67:
 Answer: 7273
 Time elapsed: 0.00006111 seconds
